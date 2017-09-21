@@ -1,9 +1,9 @@
 var mongoose = require('mongoose'),
-    Movie = require('./exercise1/newModel.js');
-    Actor = require('./exercise1/actorModel');
+    Movie = require('./exercise7/newModel.js');
+    Actor = require('./exercise7/actorModel');
 //När vi har skapat denna instans av vår modell kan vi bland annat spara den
 //i databasen. Då måste vi också lite tidigare ha skrivit kod som skapar en
-//uppkoppling till databasen.
+//uppkoppling till databasen som nedan
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/movieDB',{
