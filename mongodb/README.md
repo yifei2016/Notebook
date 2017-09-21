@@ -1,4 +1,4 @@
-# start mongodb
+# start mongodb, server run on daemon, so do not need to open a new tag
 ```
 $ brew services start mongodb
 ```
