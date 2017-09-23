@@ -7,3 +7,7 @@ Mongoose’s main value is that you can define schemas for your collections whic
 In general, Mongoose makes it even easier to use MongoDB with Node.js.
 
 [mongoose](https://devcenter.heroku.com/articles/nodejs-mongoose)
+
+
+schema and model in one file.
+mongoose kan styra upp mongodb.

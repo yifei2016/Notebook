@@ -12,7 +12,7 @@ $ ps aux | grep mongo
 ```
 run `kill <processid>` to kill process
 
-# connect to mongodb server
+# connect to mongodb server on client
 ```
 $ mongo
 ```
