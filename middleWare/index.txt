@@ -1,0 +1,26 @@
+#middleware 是check
+handler handle data
+
+
+In other frameworks “middleware” is called “filters”,
+but the concept is the same: a request, response, and some transformation functions.
+När vi behöver göra något mellan request och response, då ska vi jobba med middleware.
+Vi kan använda det till fyra olika saker.
+
+Utföra vilken kod som helst
+Göra ändringar i request- och response-objekten
+Avsluta request-response-cykeln
+Kalla på nästa middleware i stacken
+
+
+Använder vi en middleware som hanterar fel kommer den att vilja ha fyra parametrar, och den första är då err.
+
+app.use(function(err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
+
+
+Next()
+Oavsett om vi har en eller flera middleware-funktioner,
+så ska vi ha med detta nyckelord, eftersom det lämnar över till nästa middleware i stacken när funktionen är klar.

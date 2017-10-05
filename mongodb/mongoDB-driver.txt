@@ -1,0 +1,5 @@
+MongoDB Driver is another brand new driver instead of mongoose, it is The official MongoDB Node.js driver
+
+Node.js can be used in database applications.
+One of the most popular databases is MySQL.
+One of the most popular NoSQL database is MongoDB.

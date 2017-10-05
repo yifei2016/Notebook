@@ -1,0 +1,5 @@
+app.use(express.static(__dirname + '/public'));//Set the static file directory
+正如注释中写的那样，这句话的意思是，将静态文件目录设置为项目根目录+/public，当然你也可能是这么写的：
+
+app.use(express.static(path.join(__dirname, 'public')));//和上面是一样的
+运用path模块的join方法效果和前面是等价的，注意这里要引入path模块。

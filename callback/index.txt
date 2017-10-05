@@ -1,0 +1,6 @@
+There are two types of callbacks, differing in how they control data flow at runtime:
+blocking callbacks (also known as synchronous callbacks or just callbacks)
+and deferred callbacks (also known as asynchronous callbacks)
+
+Due to their nature, blocking callbacks can work without interrupts or multiple threads,
+meaning that blocking callbacks are not commonly used for synchronization or delegating work to another thread.

@@ -1,0 +1,10 @@
+Transmission Control Protocol:
+
+WebSocket A protocol for full-duplex communication over a single TCP connection.
+Websocket uses a uniform resource identifier for ws or wss, similar to HTTPS
+
+Transport Layer Security (TLS)
+
+ws and wss are WebSocket protocol schema, one is not safe, one is safe tcp + ws as ws, tcp + tls + ws as wss,
+and http protocol can be compared to understand. Socket.IO is based on the expansion of the WebSocket protocol bar,
+ws and wss to understand the two different agreements, he is supported.

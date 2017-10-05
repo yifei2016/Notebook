@@ -1,0 +1,6 @@
+Sockets (eller websockets) eller vad man nu vill kalla det, går ut på
+att server och klient skapar en fast, egen förbindelse som är aktiv hela
+tiden efter att kontakt etablerats. I denna kan sedan information skickas åt båda håll, och även till flera klienter om det finns sådana.
+
+
+http server use socket with http protocol ,  websocket use the same socket with protocol websocket,  socket has various number(port).

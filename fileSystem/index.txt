@@ -1,0 +1,11 @@
+Ordet “Chunk” förekommer i ett kod-exempel ovan, nämligen när vi använder
+createReadStream för att läsa från en textfil. Så hur stor är en chunk egentligen?
+
+Enligt den officiella dokumentationen är den 64 * 1024 bytes, vilket bör motsvara 64 kB.
+Vill vi av någon anledning ändra på den storleken, kan man göra det i options.
+
+let fsReader = fs.createReadStream('textfil.txt', {highWaterMark: 2 * 1024});//built in variable, can be used directly
+
+eller i klartext
+
+let fsReader = fs.createReadStream('textfil.txt', {highWaterMark: 2048});

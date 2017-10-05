@@ -1,0 +1,17 @@
+<a href="https://scotch.io/tutorials/build-a-single-page-time-tracking-app-with-vue-js-introduction"></a>
+
+
+Single-Page Applications (SPAs) are web apps that load a single HTML page and dynamically update that page
+as the user interacts with the app.
+SPAs use AJAX and HTML5 to create fluid and responsive Web apps, without constant page reloads.
+
+the main advantage of SPAs is that the app can respond to user interactions without fully reloading the page,
+resulting in a much more fluid user experience.
+
+As a nice side effect, a SPA also encourages the backend to focus on exposing data endpoints,
+which makes the overall architecture more decoupled不挂钩的 and potentially reusable for other types of clients.
+
+the main difference between SPAs and a traditional backend-rendered app is that we have to
+treat the client side as an application with its own structure. Typically we will need to handle routing, data fetching
+and persistence持续,
+view rendering and the necessary build setup to facilitate a modularized codebase.

@@ -1,0 +1,11 @@
+In the WebSocket API, the browser and server only need to do a handshake action,
+and then between the browser and the server to form a fast channel.
+Between the two can be directly transmitted to each other.
+
+WebSocket is HTML5 began to provide a browser and server for full-duplex communication between the network technology.
+
+
+nodejs socket.io function as websocket, is to establish a long link,
+you can let the server take the initiative to send a message to the client (usually refers to the browser)
+
+But the benefits of the server and the client is using the same language, are javascript
