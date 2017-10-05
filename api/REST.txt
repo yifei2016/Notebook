@@ -1,0 +1,17 @@
+Representational State Transfer (REST) is a software architecture style consisting of
+guidelines and best practices for creating scalable web services.
+
+REST is a coordinated set of constraints applied
+to the design of components in a distributed hypermedia system that can lead to a more performant and maintainable
+architecture.
+
+REST has gained widespread acceptance across the Web[citation needed] as a simpler alternative to SOAP and
+WSDL-based Web services. RESTful systems communicate over the Hypertext Transfer
+Protocol with the same HTTP verbs (GET, POST, PUT, DELETE, etc.) used by web browsers to retrieve web pages and send
+data to remote servers.
+
+The REST architectural style was developed by W3C Technical Architecture Group (TAG) in parallel
+with HTTP 1.1, based on the existing design
+of HTTP 1.0.
+
+The World Wide Web represents the largest implementation of a system conforming 符合to the REST architectural style.

@@ -8,3 +8,12 @@
 
 
 server render html, server send json
+
+
+server side:
+faster initial page load
+more reliable SEO, metadata, linking
+
+client side
+easier to manage
+additional page views load equally as fast

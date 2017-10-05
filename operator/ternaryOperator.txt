@@ -1,0 +1,22 @@
+Det finns en populär förkortning som kan användas i stället för vissa if-satser. Kallas även ternary operator. Exempel:
+
+if( x < 5 )
+	resultat = 'mindre än 5';
+else
+	resultat = 'större än 5';
+
+Kan förkortas till:
+
+var resultat = ( x < 5 ? 'mindre än 5' : 'större än 5' );
+
+is equal to: but below is dangerous.
+var resultat = (x < 5)? 'mindre än 5' : 'större än 5';
+
+Man kan även skriva ternary-satser med flera villkorsprövningar.
+
+I exemplet nedan kan y vara ett tal mellan 0 och 9. Om det är mindre än 3, blir x = 1,
+annars går vi vidare och kollar om y < 8 (och större än är 2, vilket vi redan kollat i den första satsen),
+och om det är så blir x = 2, annars är x = 3.
+Det blir emellertid ganska svårlästa satser, så om ni skriver så här, så glöm inte att kommentera.
+
+var x = (y < 3 ? 1 :(y < 8 ? 2 : 3));
