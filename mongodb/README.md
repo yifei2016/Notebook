@@ -17,3 +17,13 @@ run `kill <processid>` to kill process
 $ mongo
 ```
 run `exit` to disconnect mongodb
+
+import json file to mongoDB, stand on the same folder with fordon.json
+```
+$ mongoimport --jsonArray --db olsson --collection vehicles --file fordon.json
+```
+
+to count how many matched 
+```
+$ db.vehicles.find({gearbox:'manuell', requiredDriversLicense: 'B'}).count()
+```

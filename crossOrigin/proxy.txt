@@ -1,0 +1,5 @@
+https://daveceddia.com/create-react-app-express-backend/
+
+cross origin will happen, need to fill two conditions, 1: ajax(http request and not reload page)2: happen on browser.
+
+chrome 3000 ----react 3000--(proxy)--express server 4000
