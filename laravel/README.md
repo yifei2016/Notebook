@@ -7,8 +7,9 @@
 ### If we have a lot of routes, we may want to organize our routes into 'controllers'.
 
 ## Composer also offers a feature called create-project for creating new projects with a particular skeleton.
-$    composer create-project laravel/laravel projectName --prefer-dist.
-
+```
+$ composer create-project laravel/laravel projectName --prefer-dist.
+```
 # Laravel also provides two tools for managing your local development: a simpler tool called Valet that uses your local machine to
 # provide your dependencies,  and a preconfigured Vagrant setup named Homestead.
 
