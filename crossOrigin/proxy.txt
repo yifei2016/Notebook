@@ -1,9 +1,9 @@
 https://daveceddia.com/create-react-app-express-backend/
 
-## cross origin will happen, need to fill two conditions, 1: ajax(http request and not reload page)2: happen on browser.
+cross origin will happen, need to fill two conditions, 1: ajax(http request and not reload page)2: happen on browser.
 
-## chrome 3000 ----react 3000--(proxy port =4000)--express server 4000
+chrome 3000 ----react 3000--(proxy port =4000)--express server 4000
 
-## chrome can not get data(asset) from express server with port 4000, and express server can not have the same port with
-## http server 3000, so express server port is 4000, chrome can not get data from express 4000, so we need proxy
-## to let http server get data from express server.
+chrome can not get data(asset) from express server with port 4000, and express server can not have the same port with
+http server 3000, so express server port is 4000, chrome can not get data from express 4000, so we need proxy
+to let http server get data from express server.

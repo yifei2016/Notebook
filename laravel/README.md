@@ -4,17 +4,17 @@
 ## all of Laravel's dependencies already installed: `$laravel new blog`
 
 ## use composer to install laravel
-# If we have a lot of routes, we may want to organize our routes into 'controllers'.
+### If we have a lot of routes, we may want to organize our routes into 'controllers'.
 
-#Composer also offers a feature called create-project for creating new projects with a particular skeleton.
+## Composer also offers a feature called create-project for creating new projects with a particular skeleton.
 $    composer create-project laravel/laravel projectName --prefer-dist.
 
 # Laravel also provides two tools for managing your local development: a simpler tool called Valet that uses your local machine to
 # provide your dependencies,  and a preconfigured Vagrant setup named Homestead.
 
-##Artisan 是 Laravel 的命令行接口的名称，它提供了许多实用的命令来帮助你开发 Laravel 应用，它由强大的 Symfony Console 组件所驱动。
+## Artisan 是 Laravel 的命令行接口的名称，它提供了许多实用的命令来帮助你开发 Laravel 应用，它由强大的 Symfony Console 组件所驱动。
 
-# 可以使用 list 命令来列出所有可用的 Artisan 命令：
+## 可以使用 list 命令来列出所有可用的 Artisan 命令：
 
 php artisan list
 
