@@ -1,5 +1,6 @@
 Det finns en populär förkortning som kan användas i stället för vissa if-satser. Kallas även ternary operator. Exempel:
 
+
 if( x < 5 )
 	resultat = 'mindre än 5';
 else

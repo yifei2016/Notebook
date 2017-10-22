@@ -1,0 +1,11 @@
+Man kan använda en funktion för att skapa objekt. Det kallas för en konstruktor.
+Funktionen ska använda this för att skapa egenskaper och den ska anropas med nyckelordet new. Då blir konstruktorfunktionen
+en prototyp för objektet.
+function Animal(type) {  // konstruktor
+	this.type = type;  // egenskap för objektet som kommer skapas
+}
+let cat = new Animal('cat');
+Animal.prototype.speak = function() {
+	console.log("feed me, hooman");
+};  // lägger till i alla objekt som skapats av konstruktorn
+cat.speak();

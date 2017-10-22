@@ -1,0 +1,19 @@
+Model-View-Controller (MVC) is an architectural pattern that separates an application
+into three main logical components: the model, the view, and the controller. Each of these
+components are built to handle specific development aspects of an application. MVC is one of the most frequently used industry-standard
+web development framework to create scalable and extensible projects.
+
+
+Model
+The Model component corresponds to all the data-related logic that the user works with.
+This can represent either the data that is being transferred between the View and Controller
+components or any other business logic-related data. For example, a Customer object will retrieve
+the customer information from the database, manipulate it and update it data back to the database or use it to render data.
+User.update({_id: user._id},{$set: {loggedinAt: new Date() }});
+res.render("profile", {email: user.email,loggedinAt: user.loggedinAt});
+View
+The View component is used for all the UI logic of the application.
+
+Controller
+Controllers act as an interface between Model and View components to process all the business logic and incoming requests,
+manipulate data using the Model component and interact with the Views to render the final output.

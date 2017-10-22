@@ -11,3 +11,5 @@ In general, Mongoose makes it even easier to use MongoDB with Node.js.
 
 schema and model in one file.
 mongoose kan styra upp mongodb.
+
+# 

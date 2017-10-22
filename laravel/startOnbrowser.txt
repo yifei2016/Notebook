@@ -1,2 +1,2 @@
-#serve laravel project to browser
-`$php artisan serve`
+## serve laravel project to browser
+`$ php artisan serve`

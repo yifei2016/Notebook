@@ -14,3 +14,8 @@ Utelämnar man dessa så kopieras hela arrayen.)
 let a = ['joke','jack']
 a.join('') //'jokejack'
 a.join(',')//'joke,jack'
+
+
+forEach change the old array, do not need return new element, other higher order functions need return
+value and do not change the old array,
+then we need to assign the manipulated to a new variable,
