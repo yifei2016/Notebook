@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;
+      padding: 0;
+    }
+    div{
+      width: 200px;
+      line-height: 20px;
+      height: 20px;
+      font-size: 12px;
+      background: linear-gradient(to right, blue, rgb(82, 8, 8));
+      color:#fff;
+      padding:0 10px;
+      /* text-align: center; */
+    }
+    /* :before 系统会加上一个::before */
+    div::before{
+      content:'';
+      display: inline-block;
+      width:12px;
+      height: 11px;
+      background-image: url(image.jpg);
+      background-size: 100% 100%;
+      vertical-align: -1px;
+    }
+    /* div:after{
+      content: '';
+      display: inline-block;
+      width: 6.5px;
+      height: 11.5px;
+
+    } */
+  </style>
+</head>
+<body>
+  <div>贴吧</div>
+</body>
+</html>

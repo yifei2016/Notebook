@@ -1,1 +1,14 @@
-# 前端保存 用户注册在local storage方便用户不用注册 但是关了电脑 就丢失了数据 后端数据库保存用户注册信息 是永久保存
+### 前端保存 用户注册在local storage方便用户不用注册 但是关了电脑 就丢失了数据 
+后端数据库保存用户注册信息 是永久保存
+
+## <ol type="a" reversed="reversed" start="2">type="i, I, 1,A"
+<ul type="disc square circle"></ul> 
+<a href="" target="_blank"> to open new page with a new tab</a> anchor 1:超链接2:锚点
+3:打电话 <a href="tel:0765583776"></a> <a href="mailto:hello.yifei@icloud.com">dfdf</a>
+4:协议限定符 黑客 <a href="javascript:while(1){alert: blabla}"></a>
+
+### <form method="get/post" action="http:www.baidu.com">1:发送数据
+ <input type="text" name="username">
+ <input type="password" name="password">
+ <input type="submit">
+</form>

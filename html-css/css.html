@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    /* .para{
+      width: 100px;
+      height: 40px;
+      多行只呈现两行 
+      line-height: 20px;
+      border: 1px solid black;
+      多行只做截断 
+      overflow: hidden; */
+
+      /* 1: 单行文本 */
+      /* white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; */
+    /* } */
+
+  /* background image================= */
+  /* div{
+    width: 200px;
+    height: 200px;
+    background-image: url(image.jpg);
+    border:1px solid black ;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: top center;
+  } */
+
+/* padding上可以加背景颜色和图片， 内容不能加============== */
+/* a{
+  a标签要改变大小 用display:block 
+  display: inline-block;
+  border:1px solid black;
+  background-image: url(http://images.tmtpost.com/uploads/images/2012/12/8694a4c27d1ed21b7e6e7849ad6eddc450da3ff2.jpeg);
+  background-size: 190px 90px;
+  padding-top:90px;
+  overflow: hidden;
+  height:0px;
+  width: 190px; */
+/* 第一种办法 网速没有 不加载css 显示字 */
+   /* height:90px;
+  text-indent: 200px;
+  white-space: nowrap;
+  overflow: hidden; */
+/* } */
+
+span{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  font-size: 50px;
+  vertical-align: 10px;middle -5px
+}
+  </style>
+</head>
+<body>
+  <!-- 溢出容器 要打点展示：
+  1: 单行文本 2:多行文本 ================-->
+
+  <!-- <p class="para">this is dsfdfdfdfsdf dfkjasdkfj 
+    sdfsdf df dfsdfsdf this is dsfdfdfdfsdf dfkjasdkfj sdfsdf df dfsdfsdf</p> -->
+
+    <!-- background image================= -->
+    <!-- <div></div> -->
+    <!-- <a href="http:www.taobao.com" target="_blank">taobao</a> -->
+
+    <!-- p标签不能套div  a不能套a span不能套div -->
+    <!-- 行元素（span）不能改变宽高 一个元素加上position:absolute或者float:left/right就会改变成dispaly:inline-block -->
+
+    <!-- 文本低对其 span有高低时 外文本与内文本 底部对齐
+    <span>123</span>呵呵 -->
+
+</body>
+</html>

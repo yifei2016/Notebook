@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* #borderDiv{
+      width: 0px;
+      height: 0px;
+      border: 100px solid black;
+      /* border-left-color: red;
+      border-right-color: green;
+      border-top-color: blue; */
+      /* border-left-color: black;
+      border-right-color:transparent;
+      border-top-color: transparent;
+    } */ 
+
+/* 缩进 加line-height================ */
+    /* div{
+      border: 1px solid black;
+      text-align: left;
+      height: 100px;
+      line-height: 100px;
+      text-indent: 2em;
+    } */
+
+    /* div{
+      position: absolute;
+      left: 100px;
+      top: 100px;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    } */
+
+/* circles=============== */
+*{
+  margin: 0;
+  padding: 0;
+}
+    /* .circle1, .circle2, .circle3, .circle4, .circle5{
+      position: absolute;
+         width: 100px;
+         height: 100px;
+         border: 10px solid black;
+         border-radius: 50%;
+         
+    }
+    .circle1{
+      border-color: red;
+      left: 0px;
+      top: 0px;
+    }
+    .circle2{
+      border-color: green;
+      left: 130px;
+      top: 0;
+    }
+    .circle3{
+      border-color: yellow;
+      left: 260px;
+      top: 0;
+    }
+    .circle4{
+      border-color: blue;
+      left: 65px;
+      top: 70px;
+    }
+    .circle5{
+      border-color: purple;
+      left: 195px;
+      top: 70px;
+    }
+    .plat{
+      border: 5px solid black;
+      height: 185px;
+      width: 380px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left:-190px;
+      margin-top: -85px;
+    } */
+    /* position relative 相对于自身进行定位 */
+
+    /* 两栏布局============== */
+    /* .right{
+      position: absolute;
+      right: 0px;
+      width: 100px;
+      height: 100px;
+      background: #fcc;
+      opacity: 0.5;
+    }
+    .left{
+      margin-right: 100px;
+      height: 100px;
+      background: #123;
+    } */
+
+/* bfc方式解决margin塌陷 block format context============== */
+/* 如何触发一个盒子的bfc */
+/* position: absolute;
+display: inline-block;
+float: left/right;
+overflow: hidden; */
+/* 溢出部分隐藏 */
+    /* .wrapper{
+      width: 100px;
+      height: 100px;
+      background: black;
+      margin-left: 100px;
+      margin-top: 100px; 
+      border-top: 1px solid red; */
+
+      /* overflow: hidden; */
+      /* position: absolute; */
+      /* display: inline-block; */
+      /* 以上办法让父级变成bfc 
+    }*/
+    /* .content{
+      width: 50px;
+      height: 50px;
+      background: green;
+      margin-left: 50px;
+      margin-top: 50px;
+    } */
+    /* 父子的两个东西 垂直的margin会取最大的那个值 */
+
+    /* box=========区域不能共用 会累加， bfc解决问题实例*/
+    /* .box1{
+      background: red;
+      margin-right: 100px;
+    }
+    .box2{
+      background: green;
+      margin-left: 100px;
+    }
+    .demo1{
+      background: red;
+      margin-bottom: 200px;
+    }
+
+    兄弟关系的两个东西 垂直margin取最大值 这有问题 可以用bfc解决, margin合并问题 要给东西加一个html wrapper */
+    /* .demo2{
+      background: green;
+      margin-top: 100px;
+    }
+    也可以把demo1, 2都放在wrapper里面
+    .wrapper{
+      overflow: hidden;
+    } */
+    /* 为了解决bug, 加html 这是不允许的 会对js有很大影响 所以以上办法不适用 */
+
+    /* float用法============= */
+    /* .wrapper{
+      width: 350px;
+      height: 300px;
+      border: 1px solid black;
+    }
+    .content{
+      float 让元素排位 , right让元素倒着站队
+      float: left;
+      margin-left:10px; 
+      color: #fff;
+      background: black;
+      width: 100px;
+      height: 100px;
+    } */
+ 
+ /* float 单独用法================ */
+/* .box{
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: red;
+  opacity: 0.1;
+}
+.demo{
+  float: left;
+  width:100px;
+  height:200px;
+  background: green;
+} */
+
+/* 清除浮动流问题======================== */
+.wrapper{
+  border: 1px solid black;
+}
+.content{
+  width: 100px;
+  height: 100px;
+  background: black;
+  float: left;
+  color: #fff;
+}
+.para{
+  clear:both;清除浮动流 出现在该出现的位置
+  border-top: 0px solid green;
+}
+  </style>
+</head>
+<body>
+  <!-- <form action=""> -->
+    <!-- <select name="fruit" id="">
+      <option >apple</option>
+      <option >pear</option>
+      <option>orange</option>
+    </select> -->
+    <!-- <h1>choose you gender</h1>
+    male:<input type="radio" name="gender" value="female" checked="checked">
+    female: <input type="radio" name="gender" value="female">-->
+    <!-- <input type="submit" > 
+  </form> -->
+
+  <!-- 1:shell 2:core   IE: trident Firebox: Gecko Google Chrome: Webkit/blink Safari: Webkit Opera: presto -->
+  <!-- 1/4 develop 3/4 debug --> 
+  <!-- html structure css decration js behavior -->
+  <!-- domain: www.baidu.com -- dns域名服务器是指保存有该网络中所有主机的域名和对应IP地址，并具有将域名转换为IP地址功能的服务器 -- server address: 192.168.000  -->
+  <!-- section(html5) = div 
+  <div class="demo">2</div>
+  并列选择器 div.demo{}   default font-size(height) is 16px. user agent stylesheet is css default. -->
+
+  <!-- <div id="borderDiv">容器高度等于物体高度， 物体就能verticle居中 </div> -->
+
+  <!-- <img src="" alt=""><img src="" alt=""> 带有inline的元素 都具有text style -->
+<!-- body has default margin 8px -->
+<!-- *{}初始化style    -->
+
+<!-- circles================== -->
+  <!-- <div class="plat">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+  </div> -->
+
+<!-- 两栏布局=========== -->
+<!-- 一定先写left， 不然left会在第二行 -->
+<!-- <div class="right"></div>
+<div class="left"></div> -->
+
+<!-- margin塌陷问题 不能完美解决 只能bfc弥补================= -->
+<!-- <div class="wrapper">
+  <div class="content"></div>
+</div> -->
+
+
+<!-- margin合并问题 bug不解决======================== -->
+<!-- <span class="box1">123</span>
+<span class="box2">234</span>
+<div class="demo1">1</div>
+<div class="wrapper">
+    <div class="demo2">2</div>
+</div> -->
+
+<!-- float实例================ -->
+<!-- <div class="wrapper">
+  <div class="content">1</div>
+  <div class="content">2</div>
+  <div class="content">3</div>
+</div> -->
+
+
+<!-- float单独用法============ -->
+<!-- 浮动元素产生了浮动流：
+所有产生了浮动流的元素 块级元素看不到他们， 
+产生了bfc的元素和文本类（inline的元素, 比如img）属性的元素以及文本都能看到浮动元素, 浮动元素自己能看到自己 -->
+<!-- <div class="box"></div>
+<div class="demo">23dsfdf</div> -->
+
+<!-- 解决浮动流问题==================== -->
+<div class="wrapper">
+  <div class="content">1</div>
+  <div class="content">2</div>
+  <div class="content">3</div>
+  <p class="para"></p>
+</div>
+</body>
+</html>
