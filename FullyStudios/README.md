@@ -68,7 +68,7 @@ nvm install versionNumber
 ```
 ### to run project with same node version, use node right version, then $grunt to start project on webpage.
 ### to run project on valet server
-### $cd valet $valet restart $git clone project  then run on webpage with folder name.dev
+### $cd valet $valet restart $git clone project,  then run on webpage with folder name.dev
 
 ### react router, a tag kan inte känna av a:active, so use Link instead.
 ###image ratio is 16:9 svg has existing ratio, video has no ratio, background-img has no ratio.
@@ -78,3 +78,22 @@ nvm install versionNumber
 ### [react router hashHistory and browserHistory](http://dobit.top/Detail/350.html),config router in .htaccess on Apache server(https://gkedge.gitbooks.io/react-router-in-the-real/content/apache.html)
 
 ### service worker is for offline cache, registerServiceWorker is registered for the react project a service worker, used to do resource caching, this will give you faster access to resources on your next visit.registerServiceWorker registered service worker only in production environment (process.env.NODE_ENV === 'production')
+
+### loopia company have just Apache server, ngindex server is better than Apache server, it is faster.
+### https://caniuse.com/# to test which webbrowser can use css.
+
+### [flex](https://stackoverflow.com/questions/33371765/vertically-center-and-left-align-a-column-of-flex-items)
+### svg height auto is not supported on IE11 old version, svg inline style is needed on IE11.
+
+### [babel-polyfill is needed to support promise on IE11](http://www.ruanyifeng.com/blog/2016/01/babel.html)
+
+### *{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+## autoprefixer in webpack automatically completes the required prefixes for compiled css, it handles compatibility issues between different browsers
+-moz- for Firefox, 
+-webkit- for Safari and Chrome
+-o- for Opera
+-ms- for Internet Explorer
